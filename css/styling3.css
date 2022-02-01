@@ -1,0 +1,86 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*How to sett up your flexbox and content 
+ html
+   <div class="content-wrapper">
+    <header>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+  </div>
+
+CSS
+When you are creating your html and css, the html and body element on your 
+page is not expanding the entire web browser.
+So this is something you need to do on your pages
+
+  html, body {
+    height: 100vh;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: lightblue;
+  }
+
+  header {
+    background: purple;
+  }
+
+  main {
+    background: yellow;
+    flex-grow: 1;
+  }
+
+  footer {
+    background: black;
+  }
+*/
+
+html, body {
+  background: #000;
+  height: 100vh;
+}
+
+/*Start with setting font size and style on the body*/
+body {
+  font-family: 'Impact', Futura serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}

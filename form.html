@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Pepper Pizza Order Form</title>
+    <link rel="stylesheet" href="css/styling2.css">
+</head>
+<body>
+  <header>
+    <label for="hamburger-menu"><img id="hamburger-icon" src="images/hamburger.svg" alt="The hamburger menu icon when user is using page on a mobil device"></label>
+    <input id="hamburger-menu" type="checkbox">
+    <h1>Red Pepper Pizza</h1>
+    <nav role="navigation">
+      <a href="index.html" for="index-page" title="Link to Home Page">Home</a>
+      <a href="form.html" for="form-page" title="Link to Pizza Page">Pizza</a>
+    </nav>
+  </header>
+  <div class="content-wrapper">
+    <main role="main">
+      <h2>Choose your pizza</h2>
+      <form action="form-success.php" methode="GET">
+        <fieldset>
+          <legend class="fieldset__legend--heading-one">Menu</legend>
+          <div class="fieldset__div--container-one">
+            <section class="section--background-change">
+              <input type="checkbox" name="margherita-pizza" value="margherita-pizza">
+              <label for="margherita-pizza">Margherita Pizza</label>
+              <span>$12.00</span>
+              <div>
+                <label for="quantity-option">Quantity</label>
+                <select name="quantity" class="quantity-option">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <label for="crust-option">Crust</label>
+                <select name="crust-option" class="crust-option">
+                <!--
+                  <option value="Thin Crust">Thin</option>
+                  <option value="Medium Crust">Medium</option>
+                  <option value="Thick Crust">Thick</option>
+                -->
+                </select>
+              </div>
+              <p>Dressing and Sauce options</p>
+              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
+              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
+              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
+              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
+              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
+              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+            </section>
+
+            <section class="section--background-change">
+              <input type="checkbox" name="cheese-pizza" value="cheese-pizza">
+              <label for="cheese-pizza">Cheese Pizza</label>
+              <span>$10.00</span>
+              <div>
+                <label for="quantity-option">Quantity</label>
+                <select name="quantity" class="quantity-option">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <label for="crust-option">Crust</label>
+                <select name="crust-option" class="crust-option">
+                <!--
+                  <option value="Thin Crust">Thin</option>
+                  <option value="Medium Crust">Medium</option>
+                  <option value="Thick Crust">Thick</option>
+                -->
+                </select>
+              </div>
+              <p>Dressing and Sauce options:</p>
+              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
+              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
+              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
+              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
+              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
+              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+            </section>
+
+            <section class="section--background-change">
+              <input type="checkbox" name="veggie-pizza" value="veggie-pizza">
+              <label for="veggie-pizza">Veggie Pizza</label>
+              <span>$14.99</span>
+              <div>
+                <label for="quantity-option">Quantity</label>
+                <select name="quantity" class="quantity-option">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <label for="crust-option">Crust</label>
+                <select name="crust-option" class="crust-option">
+                <!--
+                  <option value="Thin Crust">Thin</option>
+                  <option value="Medium Crust">Medium</option>
+                  <option value="Thick Crust">Thick</option>
+                -->
+                </select>
+              </div>
+              <p>Dressing and Sauce options:</p>
+              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
+              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
+              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
+              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
+              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
+              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+            </section>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset--container-two">
+          <legend class="fieldset__legend--heading-two">Contact Information</legend>
+          <section>
+            <label for="first-name">First Name</label>
+            <span>*</span>
+            <input type="text" name="first-name" id="first-name" class="form__input" required>
+          </section>
+          <section>
+            <label for="last-name">Last Name</label>
+            <span>*</span>
+            <input type="text" name="last-name" id="last-name" class="form__input" required>
+          </section>
+          <section>
+            <label for="email">Email</label>
+            <span>*</span>
+            <input type="email" name="email" id="email" class="form__input">
+          </section>
+          <section>
+            <label for="area-code">Area Code</label>
+            <span>*</span>
+            <input type="text" name="area-code" id="area-code" class="form__input" required> </section>
+          <section>
+            <label for="phone-number">Phone Number</label>
+            <span>*</span>
+            <input type="tel" name="phone-number" id="phone-number" class="form__input" required>
+          </section>
+        </fieldset>
+        
+        <fieldset class="fieldset--container-three">
+          <legend class="fieldset__legend--heading-three">Delivery</legend>
+          <section>
+            <label for="pickup-date">Pickup Date</label>
+            <input type="date" name="pickup-date" id="pickup-date" class="form__input" required>
+          </section>
+          <section>
+            <label for="time-on-day">Time</label>
+            <input type="time" name="time-on-day" id="time" class="form__input">
+            <select name="delivery-time">
+              <option value="AM" selected="selected">AM</option>
+              <option value="PM" selected="selected">PM</option>
+            </select>
+          </section>
+        </fieldset>
+        <button type="submit" id="pay-pal-button"><img class="pay-pal" src="images/paypal-letters.svg">Checkout</button>
+        <button type="submit" id="debit-card-button"><img src="images/debit-card.svg" class="debit-card">Debit or Credit Card</button>
+      </form>
+    </main>
+  </div>
+  <footer role="contentinfo">
+    <section>
+      <span class="footer--social-media">
+        <a href="www.facebook.com"><img src="./images/instagram.svg" alt="instagram camera logo"></a>
+      </span>
+      <span class="footer--social-media">
+        <a href="www.intstagram.com"><img src="./images/facebook2.svg" alt="f letter in the facebook logo"></a>
+      </span>
+    </section>
+  </footer>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/form_index.js"></script>
+</body>
+</html>
+
