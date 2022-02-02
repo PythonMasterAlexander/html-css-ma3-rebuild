@@ -1,184 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="formPage">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="form">
+    <meta name="description" content="The Red Pepper Pizza order page. Where new yorker's can order the best pizza in the
+    the city. Red Pepper Pizza makes the best pizza crust in new york.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Pepper Pizza Order Form</title>
+    <title>Red Pepper Pizza order page for New Yorker's</title>
     <link rel="stylesheet" href="css/styling.css">
 </head>
-<body>
-  <header>
-    <label for="hamburger-menu"><img id="hamburger-icon" src="images/hamburger.svg" alt="The hamburger menu icon when user is using page on a mobil device"></label>
-    <input id="hamburger-menu" type="checkbox">
-    <h1>Red Pepper Pizza</h1>
-    <nav role="navigation">
-      <a href="index.html" for="index-page" title="Link to Home Page">Home</a>
-      <a href="form.html" for="form-page" title="Link to Pizza Page">Pizza</a>
-    </nav>
-  </header>
-  <div class="content-wrapper">
-    <main role="main">
-      <h2>Choose your pizza</h2>
-      <form action="form-success.php" methode="GET">
+<div class="pageWrapper"> 
+  <body>
+    <header>
+      <a href="index.html"><svg></svg></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Pizza</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Choose your pizza</h1>
+      <form action="form-success.php" method="get">
         <fieldset>
-          <legend class="fieldset__legend--heading-one">Menu</legend>
-          <div class="fieldset__div--container-one">
-            <section class="section--background-change">
-              <input type="checkbox" name="margherita-pizza" value="margherita-pizza">
-              <label for="margherita-pizza">Margherita Pizza</label>
-              <span>$12.00</span>
-              <div>
-                <label for="quantity-option">Quantity</label>
-                <select name="quantity" class="quantity-option">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <label for="crust-option">Crust</label>
-                <select name="crust-option" class="crust-option">
-                <!--
-                  <option value="Thin Crust">Thin</option>
-                  <option value="Medium Crust">Medium</option>
-                  <option value="Thick Crust">Thick</option>
-                -->
-                </select>
+          <legend>Menu</legend>
+            <section>
+              <div> 
+                <label for="margheritaPizza">Margherita Pizza</label>
+                <input type="checkbox" name="margheritaPizza" id="margheritaPizza" value="margherita-pizza">
+                <span>$12.00</span>
               </div>
-              <p>Dressing and Sauce options</p>
-              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
-              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
-              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
-              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
-              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
-              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+              <section class="optionsContainer">
+                <div>
+                  <label for="quantityOption">Quantity</label>
+                  <select name="quantity" id="quantityOption">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="thinCrust">Thin crust</label>
+                  <input type="radio" name="thinCrust" id="thinCrust" value="thin-crust">
+                </div>
+                <div>
+                  <label for="mediumCrust">Medium crust</label>
+                  <input type="radio" name="mediumCrust" id="mediumCrust" value="medium-crust">
+                </div>
+                <div>
+                  <label for="thickCrust">Thick crust</label>
+                  <input type="radio" name="thickCrust" id="thickCrust" value="thick-crust">
+                </div>
+                <p>Dressing and Sauce options:</p>
+                <div>
+                  <label for="italianHerbPizzaSauce">Italian Herb Pizza Sauce</label>
+                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauce" value="italian-herb-pizza-sauce">
+                </div>
+                <div>
+                  <label for="mangoMintDressing">Mango-Mint Dressing</label>
+                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressing" value="mango-mint-dressing">
+                </div>
+                <div>
+                  <label for="hotPeanutDressing">Hot Peanut Dressing</label>
+                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressing" value="hot-peanut-dressing">
+                </div>
+              </section>
             </section>
-
-            <section class="section--background-change">
-              <input type="checkbox" name="cheese-pizza" value="cheese-pizza">
-              <label for="cheese-pizza">Cheese Pizza</label>
-              <span>$10.00</span>
-              <div>
-                <label for="quantity-option">Quantity</label>
-                <select name="quantity" class="quantity-option">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <label for="crust-option">Crust</label>
-                <select name="crust-option" class="crust-option">
-                <!--
-                  <option value="Thin Crust">Thin</option>
-                  <option value="Medium Crust">Medium</option>
-                  <option value="Thick Crust">Thick</option>
-                -->
-                </select>
+            <section>
+              <div> 
+                <label for="cheesePizza">Cheese Pizza</label>
+                <input type="checkbox" name="cheesePizza" id="cheesePizza" value="cheese-pizza">
+                <span>$10.00</span>
               </div>
-              <p>Dressing and Sauce options:</p>
-              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
-              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
-              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
-              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
-              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
-              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+              <section class="optionsContainer">
+                <div>
+                  <label for="quantityOption">Quantity</label>
+                  <select name="quantity" id="quantityOption">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="thinCrust">Thin crust</label>
+                  <input type="radio" name="thinCrust" id="thinCrust" value="thin-crust">
+                </div>
+                <div>
+                  <label for="mediumCrust">Medium crust</label>
+                  <input type="radio" name="mediumCrust" id="mediumCrust" value="medium-crust">
+                </div>
+                <div>
+                  <label for="thickCrust">Thick crust</label>
+                  <input type="radio" name="thickCrust" id="thickCrust" value="thick-crust">
+                </div>
+                <p>Dressing and Sauce options:</p>
+                <div>
+                  <label for="italianHerbPizzaSauce">Italian Herb Pizza Sauce</label>
+                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauce" value="italian-herb-pizza-sauce">
+                </div>
+                <div>
+                  <label for="mangoMintDressing">Mango-Mint Dressing</label>
+                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressing" value="mango-mint-dressing">
+                </div>
+                <div>
+                  <label for="hotPeanutDressing">Hot Peanut Dressing</label>
+                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressing" value="hot-peanut-dressing">
+                </div>
+              </section>
             </section>
-
-            <section class="section--background-change">
-              <input type="checkbox" name="veggie-pizza" value="veggie-pizza">
-              <label for="veggie-pizza">Veggie Pizza</label>
-              <span>$14.99</span>
-              <div>
-                <label for="quantity-option">Quantity</label>
-                <select name="quantity" class="quantity-option">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <label for="crust-option">Crust</label>
-                <select name="crust-option" class="crust-option">
-                <!--
-                  <option value="Thin Crust">Thin</option>
-                  <option value="Medium Crust">Medium</option>
-                  <option value="Thick Crust">Thick</option>
-                -->
-                </select>
+            <section>
+              <div> 
+                <label for="veggiePizza">Veggie Pizza</label>
+                <input type="checkbox" name="veggiePizza" id="veggiePizza" value="veggie-pizza">
+                <span>$14.99</span>
               </div>
-              <p>Dressing and Sauce options:</p>
-              <label for="italian-herb-pizza-sauce">Italian Herb Pizza Sauce</label>
-              <input type="radio" name="italian-herb-pizza-sauce" value="italian-herb-pizza-sauce" id="italian-herb-pizza-sauce">
-              <label for="mango-mint-dressing">Mango-Mint Dressing</label>
-              <input type="radio" name="mango-mint-dressing" value="mango-mint-dressing" id="mango-mint-dressing">
-              <label for="hot-peanut-dressing">Hot Peanut Dressing</label>
-              <input type="radio" name="hot-peanut-dressing" value="hot-peanut-dressing" id="hot-peanut-dressing">
+              <section class="optionsContainer"> 
+                <div> 
+                  <label for="quantityOption">Quantity</label>
+                  <select name="quantity" id="quantityOption">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="thinCrust">Thin crust</label>
+                  <input type="radio" name="thinCrust" id="thinCrust" value="thin-crust">
+                </div>
+                <div>
+                  <label for="mediumCrust">Medium crust</label>
+                  <input type="radio" name="mediumCrust" id="mediumCrust" value="medium-crust">
+                </div>
+                <div>
+                  <label for="thickCrust">Thick crust</label>
+                  <input type="radio" name="thickCrust" id="thickCrust" value="thick-crust">
+                </div>
+                <p>Dressing and Sauce options:</p>
+                <div> 
+                  <label for="italianHerbPizzaSauce">Italian Herb Pizza Sauce</label>
+                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauce" value="italian-herb-pizza-sauce">
+                </div>
+                <div> 
+                  <label for="mangoMintDressing">Mango-Mint Dressing</label>
+                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressing" value="mango-mint-dressing">
+                </div>
+                <div> 
+                  <label for="hotPeanutDressing">Hot Peanut Dressing</label>
+                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressing" value="hot-peanut-dressing">
+                </div>
+              </section>
             </section>
+        </fieldset>
+        <fieldset class="fieldset--container-two">
+          <legend>Contact Information</legend>
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" value="first-name" required>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" value="last-name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="email">
+          </div>
+          <div>
+            <label for="areaCode">Area Code</label>
+            <input type="text" name="areaCode" id="areaCode" value="area-code" required> </div>
+          <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" value="phone-number" required>
           </div>
         </fieldset>
-
-        <fieldset class="fieldset--container-two">
-          <legend class="fieldset__legend--heading-two">Contact Information</legend>
-          <section>
-            <label for="first-name">First Name</label>
-            <span>*</span>
-            <input type="text" name="first-name" id="first-name" class="form__input" required>
-          </section>
-          <section>
-            <label for="last-name">Last Name</label>
-            <span>*</span>
-            <input type="text" name="last-name" id="last-name" class="form__input" required>
-          </section>
-          <section>
-            <label for="email">Email</label>
-            <span>*</span>
-            <input type="email" name="email" id="email" class="form__input">
-          </section>
-          <section>
-            <label for="area-code">Area Code</label>
-            <span>*</span>
-            <input type="text" name="area-code" id="area-code" class="form__input" required> </section>
-          <section>
-            <label for="phone-number">Phone Number</label>
-            <span>*</span>
-            <input type="tel" name="phone-number" id="phone-number" class="form__input" required>
-          </section>
-        </fieldset>
-        
         <fieldset class="fieldset--container-three">
-          <legend class="fieldset__legend--heading-three">Delivery</legend>
-          <section>
-            <label for="pickup-date">Pickup Date</label>
-            <input type="date" name="pickup-date" id="pickup-date" class="form__input" required>
-          </section>
-          <section>
-            <label for="time-on-day">Time</label>
-            <input type="time" name="time-on-day" id="time" class="form__input">
-            <select name="delivery-time">
+          <legend>Delivery</legend>
+          <div>
+            <label for="pickupDate">Pickup Date</label>
+            <input type="date" name="pickupDate" id="pickupDate" value="pickup-date" required>
+          </div>
+          <div>
+            <label for="timeOnDay">Time</label>
+            <input type="time" name="timeOnDay" id="timeOnDay" value="time-on-day">
+            <select name="deliveryTime">
               <option value="AM" selected="selected">AM</option>
               <option value="PM" selected="selected">PM</option>
             </select>
-          </section>
+          </div>
         </fieldset>
-        <button type="submit" id="pay-pal-button"><img class="pay-pal" src="images/paypal-letters.svg">Checkout</button>
-        <button type="submit" id="debit-card-button"><img src="images/debit-card.svg" class="debit-card">Debit or Credit Card</button>
+        <button type="submit" id="payPalButton"><img class="pay-pal" src="images/paypal-letters.svg">Checkout</button>
+        <button type="submit" id="debitCardButton"><img src="images/debit-card.svg" class="debit-card">Debit or Credit Card</button>
       </form>
     </main>
-  </div>
-  <footer role="contentinfo">
-    <section>
-      <span class="footer--social-media">
-        <a href="www.facebook.com"><img src="./images/instagram.svg" alt="instagram camera logo"></a>
-      </span>
-      <span class="footer--social-media">
-        <a href="www.intstagram.com"><img src="./images/facebook2.svg" alt="f letter in the facebook logo"></a>
-      </span>
-    </section>
-  </footer>
-  <script src="scripts/index.js"></script>
-  <script src="scripts/form_index.js"></script>
-</body>
+    <footer>
+      <section>
+        <a href="www.facebook.com"><img src="./images/instagram-symbol.svg" alt="instagram logo"></a>
+        <a href="www.intstagram.com"><img src="./images/facebook-symbol.svg" alt="facebook logo"></a>
+      </section>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</div>
 </html>
 
