@@ -1,12 +1,14 @@
+/*Css reset and border box*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
-    padding: 0px;
     margin: 0px auto;
     font: 21px 'Arial', Helvetica sans-serif;
     color: rgb(0,0,0);
-}
-
-fieldset {
-    border: 0;
 }
 
 input {
@@ -74,12 +76,6 @@ footer input {
     max-height: 25px;
     margin-left: 50px;
     margin-top: 23px;
-}
-
-.asterix {
-    color: rgb(255,0,0);
-    position: relative;
-    left: 8%;
 }
 
 .smaler-text {
