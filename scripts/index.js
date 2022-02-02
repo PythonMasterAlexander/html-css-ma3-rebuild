@@ -34,3 +34,17 @@ welcomeMessageContainer.innerHTML = welcomeMessageHtml;
 
 /*TODO
 - Build a form validation code for the form */
+
+//?
+const currentTime = new Date();
+
+const hour = currentTime.getHours();
+const minutes = currentTime.getMinutes();
+
+const inputElement = document.querySelector("[type=time]");
+
+let timeArray = [];
+timeArray.push(hour, minutes);
+
+let timeInTimeElement = timeArray.join(":");
+inputElement.value = timeInTimeElement;

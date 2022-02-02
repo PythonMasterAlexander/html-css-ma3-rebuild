@@ -1,5 +1,0 @@
-//Functions
-//
-//
-//By Alexander Hardeland
-
