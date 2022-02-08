@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Pepper Pizza order page for New Yorker's</title>
     <link rel="stylesheet" href="styles/styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <div class="pageWrapper"> 
   <body>
@@ -28,42 +31,46 @@
                 <input type="checkbox" name="margheritaPizza" id="margheritaPizzaId" value="margherita-pizza">
                 <span>$12.00</span>
               </div>
-              <section class="optionsContainer">
-                <div>
-                  <label for="quantityMargheritaOptionId">Quantity</label>
-                  <select name="quantity" id="quantityMargheritaOptionId">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="margheritaThinCrustId">Thin crust</label>
-                  <input type="radio" name="thinCrust" id="margheritaThinCrustId" value="thin-crust">
-                </div>
-                <div>
-                  <label for="margheritaMediumCrust">Medium crust</label>
-                  <input type="radio" name="mediumCrust" id="margheritaMediumCrust" value="medium-crust">
-                </div>
-                <div>
-                  <label for="margheritaThickCrust">Thick crust</label>
-                  <input type="radio" name="thickCrust" id="margheritaThickCrust" value="thick-crust">
-                </div>
-                <p>Dressing and Sauce options:</p>
-                <div>
-                  <label for="italianHerbPizzaSauceid">Italian Herb Pizza Sauce</label>
-                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
-                </div>
-                <div>
-                  <label for="mangoMintDressingId">Mango-Mint Dressing</label>
-                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
-                </div>
-                <div>
-                  <label for="hotPeanutDressingId">Hot Peanut Dressing</label>
-                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
-                </div>
+              <div>
+                <label for="quantityMargheritaOptionId">Quantity</label>
+                <select name="quantity" id="quantityMargheritaOptionId">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <section class="form__pizzaOptionsContainer">
+                <section class="form__pizzaOptionsContainer--sectionOne"> 
+                  <div>
+                    <label for="margheritaThinCrustId" class="extraOnPizza--label">Thin crust</label>
+                    <input type="radio" name="thinCrust" id="margheritaThinCrustId" value="thin-crust">
+                  </div>
+                  <div>
+                    <label for="margheritaMediumCrust" class="extraOnPizza--label">Medium crust</label>
+                    <input type="radio" name="mediumCrust" id="margheritaMediumCrust" value="medium-crust">
+                  </div>
+                  <div>
+                    <label for="margheritaThickCrust" class="extraOnPizza--label">Thick crust</label>
+                    <input type="radio" name="thickCrust" id="margheritaThickCrust" value="thick-crust">
+                  </div>
+                </section>
+                <section class="form__pizzaOptionsContainer--sectionTwo"> 
+                  <h2>Dressing and Sauce options</h2>
+                  <div>
+                    <label for="italianHerbPizzaSauceid" class="extraOnPizza--label">Italian Herb Pizza Sauce</label>
+                    <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
+                  </div>
+                  <div>
+                    <label for="mangoMintDressingId" class="extraOnPizza--label">Mango-Mint Dressing</label>
+                    <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
+                  </div>
+                  <div>
+                    <label for="hotPeanutDressingId" class="extraOnPizza--label">Hot Peanut Dressing</label>
+                    <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
+                  </div>
+                </section>
               </section>
             </section>
             <section>
@@ -72,42 +79,46 @@
                 <input type="checkbox" name="cheesePizza" id="cheesePizzaId" value="cheese-pizza">
                 <span>$10.00</span>
               </div>
-              <section class="optionsContainer">
-                <div>
-                  <label for="cheesePizzaQuantityOptionId">Quantity</label>
-                  <select name="quantity" id="cheesePizzaQuantityOptionId">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="cheesePizzaThinCrustId">Thin crust</label>
-                  <input type="radio" name="thinCrust" id="cheesePizzaThinCrustId" value="thin-crust">
-                </div>
-                <div>
-                  <label for="cheesePizzaMediumCrustId">Medium crust</label>
-                  <input type="radio" name="mediumCrust" id="cheesePizzaMediumCrustId" value="medium-crust">
-                </div>
-                <div>
-                  <label for="cheesePizzaThickCrustId">Thick crust</label>
-                  <input type="radio" name="thickCrust" id="cheesePizzaThickCrustId" value="thick-crust">
-                </div>
-                <p>Dressing and Sauce options:</p>
-                <div>
-                  <label for="italianHerbPizzaSauceId">Italian Herb Pizza Sauce</label>
-                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
-                </div>
-                <div>
-                  <label for="mangoMintDressingId">Mango-Mint Dressing</label>
-                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
-                </div>
-                <div>
-                  <label for="hotPeanutDressingId">Hot Peanut Dressing</label>
-                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
-                </div>
+              <div>
+                <label for="cheesePizzaQuantityOptionId">Quantity</label>
+                <select name="quantity" id="cheesePizzaQuantityOptionId">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <section class="form__pizzaOptionsContainer">
+                <section class="form__pizzaOptionsContainer--sectionOne"> 
+                  <div>
+                    <label for="cheesePizzaThinCrustId" class="extraOnPizza--label">Thin crust</label>
+                    <input type="radio" name="thinCrust" id="cheesePizzaThinCrustId" value="thin-crust">
+                  </div>
+                  <div>
+                    <label for="cheesePizzaMediumCrustId" class="extraOnPizza--label">Medium crust</label>
+                    <input type="radio" name="mediumCrust" id="cheesePizzaMediumCrustId" value="medium-crust">
+                  </div>
+                  <div>
+                    <label for="cheesePizzaThickCrustId" class="extraOnPizza--label">Thick crust</label>
+                    <input type="radio" name="thickCrust" id="cheesePizzaThickCrustId" value="thick-crust">
+                  </div>
+                </section>
+                <section class="form__pizzaOptionsContainer--sectionTwo"> 
+                  <h2>Dressing and Sauce options</h2>
+                  <div>
+                    <label for="italianHerbPizzaSauceId" class="extraOnPizza--label">Italian Herb Pizza Sauce</label>
+                    <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
+                  </div>
+                  <div>
+                    <label for="mangoMintDressingId" class="extraOnPizza--label">Mango-Mint Dressing</label>
+                    <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
+                  </div>
+                  <div>
+                    <label for="hotPeanutDressingId" class="extraOnPizza--label">Hot Peanut Dressing</label>
+                    <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
+                  </div>
+                </section>
               </section>
             </section>
             <section>
@@ -116,42 +127,46 @@
                 <input type="checkbox" name="veggiePizza" id="veggiePizzaId" value="veggie-pizza">
                 <span>$14.99</span>
               </div>
-              <section class="optionsContainer"> 
-                <div> 
-                  <label for="veggiePizzaQuantityOptionId">Quantity</label>
-                  <select name="quantity" id="veggiePizzaQuantityOptionId">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="veggiePizzaThinCrustId">Thin crust</label>
-                  <input type="radio" name="thinCrust" id="veggiePizzaThinCrustId" value="thin-crust">
-                </div>
-                <div>
-                  <label for="veggiePizzaMediumCrustId">Medium crust</label>
-                  <input type="radio" name="mediumCrust" id="veggiePizzaMediumCrustId" value="medium-crust">
-                </div>
-                <div>
-                  <label for="veggiePizzaThickCrustId">Thick crust</label>
-                  <input type="radio" name="thickCrust" id="veggiePizzaThickCrustId" value="thick-crust">
-                </div>
-                <p>Dressing and Sauce options:</p>
-                <div> 
-                  <label for="italianHerbPizzaSauceId">Italian Herb Pizza Sauce</label>
-                  <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
-                </div>
-                <div> 
-                  <label for="mangoMintDressingId">Mango-Mint Dressing</label>
-                  <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
-                </div>
-                <div> 
-                  <label for="hotPeanutDressingId">Hot Peanut Dressing</label>
-                  <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
-                </div>
+              <div> 
+                <label for="veggiePizzaQuantityOptionId">Quantity</label>
+                <select name="quantity" id="veggiePizzaQuantityOptionId">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <section class="form__pizzaOptionsContainer"> 
+                <section class="form__pizzaOptionsContainer--sectionOne"> 
+                  <div>
+                    <label for="veggiePizzaThinCrustId" class="extraOnPizza--label">Thin crust</label>
+                    <input type="radio" name="thinCrust" id="veggiePizzaThinCrustId" value="thin-crust">
+                  </div>
+                  <div>
+                    <label for="veggiePizzaMediumCrustId" class="extraOnPizza--label">Medium crust</label>
+                    <input type="radio" name="mediumCrust" id="veggiePizzaMediumCrustId" value="medium-crust">
+                  </div>
+                  <div>
+                    <label for="veggiePizzaThickCrustId" class="extraOnPizza--label">Thick crust</label>
+                    <input type="radio" name="thickCrust" id="veggiePizzaThickCrustId" value="thick-crust">
+                  </div>
+                </section>
+                <section class="form__pizzaOptionsContainer--sectionTwo"> 
+                  <h2>Dressing and Sauce options</h2>
+                  <div> 
+                    <label for="italianHerbPizzaSauceId" class="extraOnPizza--label">Italian Herb Pizza Sauce</label>
+                    <input type="checkbox" name="italianHerbPizzaSauce" id="italianHerbPizzaSauceId" value="italian-herb-pizza-sauce">
+                  </div>
+                  <div> 
+                    <label for="mangoMintDressingId" class="extraOnPizza--label">Mango-Mint Dressing</label>
+                    <input type="checkbox" name="mangoMintDressing" id="mangoMintDressingId" value="mango-mint-dressing">
+                  </div>
+                  <div> 
+                    <label for="hotPeanutDressingId" class="extraOnPizza--label">Hot Peanut Dressing</label>
+                    <input type="checkbox" name="hotPeanutDressing" id="hotPeanutDressingId" value="hot-peanut-dressing">
+                  </div>
+                </section>
               </section>
             </section>
         </fieldset>
