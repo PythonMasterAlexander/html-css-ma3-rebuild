@@ -18,6 +18,10 @@ h1 {
     font-size: 3.5rem;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 a {
     color: rgb(0,0,0);
     text-decoration: none;
@@ -92,7 +96,6 @@ header, footer {
 .form__pizzaOptionsContainer div {
     display: inline-block;
 }
-
 @media(max-width: 850px) {
     h1 {
         font-size: 1.8rem;
@@ -121,17 +124,28 @@ header, footer {
         align-self: end;
     }
 
-    .form__pizzaOptionsContainer div{
+    .form__pizzaOptionsContainer div {
         display: block;
     }
 
-    .form__pizzaOptionsContainer h2 {
-        flex: 0 0 100%;
+    .form__pizzaOptionsContainer--sectionOne div, .form__pizzaOptionsContainer--sectionTwo div {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 @media(max-width: 500px) {
+    h2 {
+        text-align: center;
+    }
+
     .form__pizzaOptionsContainer {
         flex-direction: column;
+        align-items: center;
     }
+
+    .form__pizzaOptionsContainer--sectionOne {
+        align-self: center;
+    }
+
 }
