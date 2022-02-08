@@ -9,21 +9,13 @@
     font-size: 16px;
 }
 
-@font-face {
-    font-family: 'Rubik', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-    src: url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-    font-family: 'Arvo', serif;
-}
-
 body {
-    font-family: 'Rubik', 'Arial', sans-serif;
+    font-family: 'Rubik Mono One', 'Arial', sans-serif;
 }
 
 h1 {
-    font-family: 'Arvo', serif;
-    font-weight: bolder;
+    font-family: 'Arvo', 'Impact', serif;
+    font-size: 3.5rem;
 }
 
 a {
@@ -32,17 +24,25 @@ a {
 }
 
 legend {
+    font-size: 2rem;
     margin: 0 auto;
+}
+
+[for=margheritaPizzaId], [for=cheesePizzaId], [for=veggiePizzaId] {
+    font-size: 1.8rem;
+}
+
+[for=quantityMargheritaOptionId], [for=cheesePizzaQuantityOptionId], [for=veggiePizzaQuantityOptionId], h2 {
+    font-size: 1.3rem;
+}
+
+.extraOnPizza--label {
+    font-size: 0.8rem;
 }
 
 header {
     margin-bottom: 50px;
     text-align: bottom;
-}
-
-main {
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 fieldset {
@@ -51,9 +51,14 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 20px;
+}
+
+section div {
+    border: solid black 2px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -64,6 +69,17 @@ input {
     width: 420px;
 }
 
+[type=radio], [type=checkbox] {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+#margheritaPizzaId, #cheesePizzaId, #veggiePizzaId {
+    height: 23px;
+    width: 23px;
+}
+
 footer {
     margin-top: 40px;
 }
@@ -71,4 +87,51 @@ footer {
 header, footer {
     background-color: rgb(0,160,216);
     height: 100px;
+}
+
+.form__pizzaOptionsContainer div {
+    display: inline-block;
+}
+
+@media(max-width: 850px) {
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    [for=margheritaPizzaId], [for=cheesePizzaId], [for=veggiePizzaId] {
+        font-size: 1.2rem;
+    }
+
+    [for=quantityMargheritaOptionId], [for=cheesePizzaQuantityOptionId], [for=veggiePizzaQuantityOptionId], 
+     .extraOnPizza--label, h2 {
+        font-size: 0.8rem;
+    }
+
+    .form__pizzaOptionsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form__pizzaOptionsContainer--sectionOne {
+        align-self: end;
+    }
+
+    .form__pizzaOptionsContainer div{
+        display: block;
+    }
+
+    .form__pizzaOptionsContainer h2 {
+        flex: 0 0 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .form__pizzaOptionsContainer {
+        flex-direction: column;
+    }
 }
